@@ -117,6 +117,11 @@ section {
  grid-template-columns: 1fr auto;
 }
 
+.about-heading {
+ text-wrap: nowrap;
+ text-align: left;
+ margin-left: 0;
+}
 .about-card .about-image {
  width: fit-content;
  border-radius: 10px 0 0 10px;
@@ -261,6 +266,8 @@ section {
 .project-image img {
  width: 100%;
  margin: auto;
+ background-color: var(--primary-color);
+ border-radius: 20px;
 }
 
 .project-links a {
