@@ -10,11 +10,22 @@
   <header>
    <nav class="main-nav">
     <ul>
-     <li class="fa fa-home"><a href="#">Home</a></li>
-     <li class="fa fa-user"><a href="#">About</a></li>
-     <li class="fa fa-list"><a href="#">Skills</a></li>
-     <li class="fa fa-briefcase"><a href="#">My Work</a></li>
-     <li class="fa fa-envelope"><a href="#">Contact</a></li>
+     <li
+      ><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li
+     >
+     <li
+      ><a href="#skills"><i class="fas fa-list"></i><span>Skills</span></a></li
+     >
+     <li
+      ><a href="#projects"
+       ><i class="fas fa-briefcase"></i><span>Projects</span></a
+      ></li
+     >
+     <li
+      ><a href="#"
+       ><i class="fas fa-address-card"></i><span>Contact</span></a
+      ></li
+     >
     </ul>
    </nav>
   </header>
@@ -34,10 +45,8 @@
         over 2 years of experience. I specialize in creating interactive,
         responsive, and user-friendly websites using the latest web
         technologies. I'm constantly exploring new technologies and applying
-        them in projects. Currently, I'm working on a groundbreaking project
-        that I believe will significantly contribute to my goal of becoming a
-        professional web developer. When I'm not coding, you'll find me
-        exploring new tech trends or engaged in lifelong learning.
+        them in projects. When I'm not coding, you'll find me exploring new tech
+        trends or engaged in lifelong learning.
        </p>
       </div>
      </div>
@@ -60,7 +69,7 @@
        </ul>
       </div>
      </div>
-     <div class="skill-group-card">
+     <div class="skill-group-card card">
       <div class="skill-group-heading">
        <h2>Backend</h2>
       </div>
@@ -71,7 +80,7 @@
        </ul>
       </div>
      </div>
-     <div class="skill-group-card">
+     <div class="skill-group-card card">
       <div class="skill-group-heading">
        <h2>Scource Control</h2>
       </div>
@@ -88,9 +97,11 @@
 
    <!-- Projects/Portfolio -->
    <section id="projects">
-    <h1 class="section-heading"><i class="fa fa-briefcase"></i>My Work</h1>
+    <h1 class="section-heading project-heading"
+     ><i class="fa fa-briefcase"></i>My Work</h1
+    >
     <div class="section-content">
-     <div class="project-card">
+     <div class="project-card card">
       <div class="project-image">
        <img
         src="https://digitalisim.pages.dev/v.3.0/assets/img/iot.png"
@@ -98,7 +109,7 @@
        />
       </div>
       <div class="project-info">
-       <h2 class="project-heading">Digitalism</h2>
+       <h2 class="project-info-heading">Digitalism</h2>
        <p class="project-description">
         This project uses HTML, CSS and JavaScript. It's purpose is to help
         students with helping student understand Digital Circuits.
@@ -110,12 +121,12 @@
       </div>
      </div>
 
-     <div class="project-card">
+     <div class="project-card card">
       <div class="project-image">
        <img src="./assets/images/clipart-profile-6.jpg" alt="project image" />
       </div>
       <div class="project-info">
-       <h2 class="project-heading">Scientific Calculator</h2>
+       <h2 class="project-info-heading">Scientific Calculator</h2>
        <p class="project-description">
         Just a simple calculator that uses HTML, CSS and JavaScript.
        </p>
@@ -123,6 +134,54 @@
         <a href="#" class="project-link">Live Preview</a>
         <a href="#" class="project-link">Source Code</a>
        </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- contact section -->
+   <section id="contacts">
+    <h1 class="section-heading"><i class="fa fa-address-card"></i>Contact</h1>
+    <div class="section-content">
+     <div class="contact-card">
+      <div class="contact-info">
+       <h2 class="contact-heading">Contact Info</h2>
+       <div class="contact-info-content">
+        <p> <i class="fas fa-phone"></i>063 123 4567 </p>
+        <p> <i class="fas fa-envelope"></i>manelisi.mpotulo@umuzi.org</p>
+        <p>
+         <i class="fas fa-map-marker-alt"></i>123 Street, City, Country 12345
+        </p>
+       </div>
+       <div class="social-media-content">
+        <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="#"><i class="fab fa-github"></i>GitHub</a>
+        <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+       </div>
+      </div>
+      <div class="contact-form">
+       <h2 class="contact-heading">Send a Message</h2>
+       <form action="#">
+        <div class="form-group">
+         <label for="name">Name</label>
+         <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+         <label for="email">Email</label>
+         <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+         <label for="message">Message</label>
+         <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Enter your message"
+         ></textarea>
+        </div>
+        <button type="submit" class="btn">Send</button>
+       </form>
       </div>
      </div>
     </div>
@@ -136,8 +195,8 @@
    </div>
 
    <div class="contact">
-    <span><i class="fas fa-phone"></i> &nbsp; 063 123 4567</span>
-    <span><i class="fas fa-envelope"></i> &nbsp;</span>
+    <span><i class="fas fa-phone"></i>063 123 4567</span>
+    <span><i class="fas fa-envelope"></i></span>
    </div>
 
    <div class="socials">

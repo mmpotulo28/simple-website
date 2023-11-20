@@ -17,7 +17,7 @@ body {
  --quaternary-color: #03071e;
  --quinary-color: #031d44;
  --senary-color: #11151c;
- --septenary-color: #ffffff;
+ --septenary-color: #b0b0b0;
 }
 
 .main-nav {
@@ -58,6 +58,10 @@ body {
  margin: 0 10px;
 }
 
+.main-nav ul li a i {
+ margin-right: 5px;
+}
+
 .main-nav ul li:hover,
 .main-nav ul li:hover a {
  color: var(--secondary-color);
@@ -70,6 +74,7 @@ section {
  width: 90%;
  padding-bottom: 30px;
  border-bottom: 2px solid var(--secondary-color);
+ overflow: hidden;
 }
 
 .section-content {
@@ -132,19 +137,39 @@ section {
 }
 
 /* skills section */
-.skill-group-card {
+.card {
  background-color: var(--quinary-color);
  padding: 20px;
  margin: 10px;
  border-radius: 20px;
+ border: 2px solid var(--septenary-color);
+ box-shadow: 3px 3px 3px var(--secondary-color);
 }
 
-.skill-group-card h3 {
+.skill-group-card {
+ background-color: var(--quinary-color);
+ padding: 10px 20px;
+ margin: 10px;
+ border-radius: 20px;
+ border: 2px solid var(--septenary-color);
+ box-shadow: 3px 3px 3px var(--secondary-color);
+ min-height: 200px;
+ min-width: 150px;
+}
+
+.skill-group-card .skill-group-heading {
  color: var(--secondary-color);
+ border-bottom: var(--secondary-color) 2px solid;
+ /* line-height: 30px; */
+ height: 30px;
+ text-align: center;
+ vertical-align: top;
+ margin-bottom: 15px;
+ width: 100%;
 }
 
 .skill-group-card ul {
- list-style: none;
+ list-style: inside;
  padding: 0;
  margin: 0;
 }
@@ -154,18 +179,37 @@ section {
 }
 
 /* projects section */
+#projects {
+ display: block;
+ position: relative;
+ background: linear-gradient(var(--primary-color), var(--tertiary-color));
+ border-radius: 20px;
+ padding: 20px 0;
+ /* border: none; */
+}
+
+#skills {
+ border: none;
+}
+
 .project-card {
- background-color: var(--primary-color);
+ background: rgb(231, 227, 227);
  padding: 20px;
  margin: 10px;
  border-radius: 20px;
  overflow: hidden;
  width: fit-content;
  max-width: 300px;
+ color: var(--primary-color);
+ border-radius: 0 20px 0 20px;
 }
 
-.project-card h3 {
- color: var(--secondary-color);
+.project-heading {
+ border-bottom: 2px solid var(--secondary-color);
+ width: 80%;
+ margin: auto;
+ padding-bottom: 5px;
+ margin-bottom: 20px;
 }
 
 .project-card ul {
@@ -181,4 +225,107 @@ section {
 .project-image img {
  width: 100%;
  margin: auto;
+}
+
+/* contact section */
+#contacts {
+ margin-top: 20px;
+ border-top: 2px solid var(--secondary-color);
+}
+.contact-card {
+ background: linear-gradient(var(--primary-color), var(--tertiary-color));
+ border-radius: 20px;
+ position: relative;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding: 20px;
+ width: calc(100%-40px);
+ gap: 20px;
+}
+
+.contact-heading {
+ color: var(--secondary-color);
+ text-align: center;
+}
+
+.contact-info .contact-info-content .fas {
+ margin-right: 5px;
+}
+
+.contact-form {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.contact-form .form-group {
+ display: flex;
+ flex-direction: column;
+}
+
+.contact-form button {
+ background-color: var(--secondary-color);
+ color: white;
+ font-size: 19px;
+ padding: 5px 10px;
+ margin: 20px auto;
+}
+
+.contact-form .form-group input {
+ margin: 5px 0 10px 0px;
+ height: 20px;
+ border-radius: 10px;
+ padding: 5px;
+}
+
+.contact-form .form-group textarea {
+ border-radius: 10px;
+ padding: 10px;
+}
+
+.contact-info {
+ display: flex;
+ border-right: 2px solid var(--secondary-color);
+ padding-right: 20px;
+ flex-direction: column;
+ padding: 0 10px;
+}
+
+.contact-card .social-media-content {
+ display: flex;
+ gap: 17px;
+ flex-direction: column;
+ flex-wrap: wrap;
+ border-top: 1px solid var(--secondary-color);
+ padding-top: 20px;
+ border-radius: 0 20px 0 0;
+ margin-top: 20px;
+ width: 100%;
+}
+
+.contact-card .social-media-content a {
+ color: var(--secondary-color);
+ font-size: 17px;
+ text-decoration: none;
+ text-wrap: nowrap;
+}
+
+.contact-card .social-media-content a:hover {
+ color: blue;
+ font-weight: bold;
+}
+
+.contact-card .social-media-content a i {
+ margin-right: 5px;
+}
+/* media query */
+@media (max-width: 600px) {
+ .main-nav ul li {
+  /* padding: 0 15px; */
+  width: 30px;
+ }
+
+ .main-nav ul li a span {
+  display: none;
+ }
 }
