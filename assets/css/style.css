@@ -20,6 +20,11 @@ body {
  --septenary-color: #b0b0b0;
 }
 
+.fas,
+.fa {
+ margin-right: 10px !important;
+}
+
 .main-nav {
  display: flex;
  position: static;
@@ -199,9 +204,15 @@ section {
  border-radius: 20px;
  overflow: hidden;
  width: fit-content;
- max-width: 300px;
+ /* max-width: 300px; */
+ width: Max(100px, 300px);
  color: var(--primary-color);
  border-radius: 0 20px 0 20px;
+ min-height: 500px;
+}
+
+.project-card p {
+ font-size: 19px;
 }
 
 .project-heading {
@@ -225,6 +236,20 @@ section {
 .project-image img {
  width: 100%;
  margin: auto;
+}
+
+.project-links a {
+ background-color: var(--primary-color);
+ padding: 5px 10px;
+ border-radius: 10px;
+ color: var(--secondary-color);
+ text-decoration: none;
+}
+
+.project-links a:hover {
+ border: 2px solid var(--secondary-color);
+ color: whitesmoke;
+ font-weight: bold;
 }
 
 /* contact section */
@@ -269,6 +294,15 @@ section {
  font-size: 19px;
  padding: 5px 10px;
  margin: 20px auto;
+ border-radius: 10px;
+}
+
+.contact-form button:hover {
+ background-color: var(--primary-color);
+ box-shadow: 1px 1px 5px 3px var(--secondary-color);
+ font-weight: bold;
+ border: none;
+ scale: 1.1;
 }
 
 .contact-form .form-group input {
@@ -318,6 +352,7 @@ section {
 .contact-card .social-media-content a i {
  margin-right: 5px;
 }
+
 /* media query */
 @media (max-width: 600px) {
  .main-nav ul li {
