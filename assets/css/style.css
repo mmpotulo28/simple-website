@@ -389,6 +389,7 @@ section {
  font-size: 17px;
  text-decoration: none;
  text-wrap: nowrap;
+ width: fit-content;
 }
 
 .contact-card .social-media-content a:hover {
