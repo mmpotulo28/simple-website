@@ -101,6 +101,10 @@ section {
  color: var(--secondary-color);
 }
 
+.section-heading:hover {
+ scale: 1.1;
+}
+
 /* about section */
 .about-card {
  max-width: 100%;
@@ -182,6 +186,16 @@ section {
  box-shadow: 3px 3px 3px var(--secondary-color);
  min-height: 200px;
  min-width: 150px;
+ transition: all ease-out 0.2s;
+}
+
+.skill-group-card:hover {
+ scale: 1.1;
+}
+
+.skill-group-card ul li:hover {
+ color: var(--secondary-color);
+ font-weight: bold;
 }
 
 .skill-group-card .skill-group-heading {
@@ -214,6 +228,10 @@ section {
  vertical-align: middle;
 }
 
+#skills {
+ border: none;
+}
+
 /* projects section */
 #projects {
  display: block;
@@ -222,10 +240,6 @@ section {
  border-radius: 20px;
  padding: 20px 0;
  /* border: none; */
-}
-
-#skills {
- border: none;
 }
 
 .project-card {
