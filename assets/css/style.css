@@ -423,47 +423,8 @@ section {
  margin-right: 5px;
 }
 
-/* media query */
-@media (max-width: 650px) {
- .main-nav ul li {
-  width: 30px;
- }
-
- .main-nav ul li a span {
-  display: none;
- }
-
- .main-nav ul li a {
-  font-size: 20px;
- }
-
- .contact-card {
-  display: grid;
-  grid-template-columns: 1fr;
- }
-
- .contact-card .contact-info {
-  border-right: none;
-  border-bottom: 2px solid var(--secondary-color);
-  padding-bottom: 30px;
- }
-
- .contact-card .contact-info .social-media-content {
-  border-top: none;
- }
-
- .contact-card .contact-form button {
-  display: block;
-  margin: 20px auto;
- }
-
- .about-card {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: left;
- }
-
- .main-footer .contact {
-  display: none;
- }
+.error-text {
+ display: none;
+ color: red;
+ margin: 0 0 10px 0;
 }

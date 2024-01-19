@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/reponsive.css" />
   <title>Manelisi Mpotulo's Portfolio</title>
  </head>
  <body>
@@ -35,17 +36,17 @@
    <section class="about">
     <div class="about-card">
      <div class="about-image">
-      <img src="./assets/images/tuiop.jpeg" alt="profile image" />
+      <img src="./assets/images/tuiop.jpeg" alt="Profile Image" />
      </div>
      <div class="about-info">
       <h1 class="about-heading section-heading">Manelisi Mpotulo</h1>
       <div class="about-content">
        <p>
-        Hello! I'm Manelisi Mpotulo, a passionate self-taught web developer. I specialize in creating interactive,
-        responsive, and user-friendly websites using the latest web
-        technologies. I'm constantly exploring new technologies and applying
-        them in projects. When I'm not coding, you'll find me exploring new tech
-        trends or engaged in lifelong learning.
+        Hello! I'm Manelisi Mpotulo, a passionate self-taught web developer. I
+        specialize in creating interactive, responsive, and user-friendly
+        websites using the latest web technologies. I'm constantly exploring new
+        technologies and applying them in projects. When I'm not coding, you'll
+        find me exploring new tech trends or engaged in lifelong learning.
        </p>
       </div>
      </div>
@@ -65,7 +66,7 @@
         <li>
          <img
           src="./assets/images/skills/clipboard-image-3.png"
-          alt=""
+          alt="HTML"
           class="skill-image"
          />
          <span class="skill-text">HTML</span>
@@ -73,7 +74,7 @@
         <li>
          <img
           src="./assets/images/skills/clipboard-image-4.png"
-          alt=""
+          alt="CSS"
           class="skill-image"
          />
          <span class="skill-text">CSS</span>
@@ -81,7 +82,7 @@
         <li>
          <img
           src="./assets/images/skills/clipboard-image-5.png"
-          alt=""
+          alt="JavaScript"
           class="skill-image"
          />
          <span class="skill-text">JavaScript</span>
@@ -98,7 +99,7 @@
         <li>
          <img
           src="./assets/images/skills/Node_logo_NodeJS.png"
-          alt=""
+          alt="Node.js"
           class="skill-image"
          />
          <span class="skill-text">NODE JS</span>
@@ -106,7 +107,7 @@
         <li>
          <img
           src="./assets/images/skills/clipboard-image-7.png"
-          alt=""
+          alt="MySQL"
           class="skill-image"
          />
          <span class="skill-text">MySQL</span>
@@ -123,7 +124,7 @@
         <li>
          <img
           src="./assets/images/skills/git-icon-logo-png-transparent.png"
-          alt=""
+          alt="Git"
           class="skill-image"
          />
          <span class="skill-text">Git</span>
@@ -131,7 +132,7 @@
         <li>
          <img
           src="./assets/images/skills/clipboard-image-17.png"
-          alt=""
+          alt="GitHub"
           class="skill-image"
          />
          <span class="skill-text">GitHub</span>
@@ -139,7 +140,7 @@
         <li>
          <img
           src="./assets/images/skills/clipboard-image-16.png"
-          alt=""
+          alt="Azure Repo"
           class="skill-image"
          />
          <span class="skill-text">Azure Repo</span>
@@ -156,7 +157,7 @@
         <li>
          <img
           src="./assets/images/skills/clipboard-image-9.png"
-          alt=""
+          alt="C"
           class="skill-image"
          />
          <span class="skill-text">C</span>
@@ -164,7 +165,7 @@
         <li>
          <img
           src="./assets/images/skills/clipboard-image-8.png"
-          alt=""
+          alt="Java"
           class="skill-image"
          />
          <span class="skill-text">JAVA</span>
@@ -195,13 +196,13 @@
         students to understand Digital Circuits.
        </p>
        <div class="project-links">
-        <a target="_blank"
+        <a
          target="_blank"
          href="https://digitalisim.pages.dev/"
          class="project-link"
          >Live Preview</a
         >
-        <a target="_blank"
+        <a
          target="_blank"
          href="https://github.com/mmpotulo28/digitalism"
          class="project-link"
@@ -238,7 +239,8 @@
         <a target="_blank" href="https://linkedin.com/in/mmpotulo"
          ><i class="fa fa-linkedin"></i>LinkedIn</a
         >
-        <a target="_blank"
+        <a
+         target="_blank"
          href="https://drive.google.com/file/d/1rNe5EKE9IOVvlBn7TftMJfTApmzjqGmA/view?usp=sharing"
          ><i class="fa fa-file"></i>Resume</a
         >
@@ -246,23 +248,36 @@
       </div>
       <div class="contact-form">
        <h2 class="contact-heading">Send a Message</h2>
-       <form action="#">
+       <form id="contacts-form">
         <div class="form-group">
          <label for="name">Name</label>
-         <input type="text" id="name" placeholder="Enter your name" />
+         <input
+          type="text"
+          id="contact-name"
+          placeholder="Enter your name"
+          required
+         />
+         <p class="error-text" id="name-error"></p>
         </div>
         <div class="form-group">
          <label for="email">Email</label>
-         <input type="email" id="email" placeholder="Enter your email" />
+         <input
+          type="email"
+          id="contact-email"
+          placeholder="Enter your email"
+          required
+         />
+         <p class="error-text" id="email-error"></p>
         </div>
         <div class="form-group">
          <label for="message">Message</label>
          <textarea
           name="message"
-          id="message"
+          id="contact-message"
           cols="30"
           rows="10"
           placeholder="Enter your message"
+          required
          ></textarea>
         </div>
         <button type="submit" class="btn">Send</button>
@@ -287,7 +302,9 @@
     <a target="_blank" href="https://Instagram.com/dj_mnesh"
      ><i class="fab fa-instagram"></i
     ></a>
-    <a target="_blank" href="https://github.com/mmpotulo28"><i class="fab fa-github"></i></a>
+    <a target="_blank" href="https://github.com/mmpotulo28"
+     ><i class="fab fa-github"></i
+    ></a>
     <a target="_blank" href="https://linkedin.com/in/mmpotulo"
      ><i class="fab fa-linkedin"></i
     ></a>
