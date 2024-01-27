@@ -3,6 +3,11 @@ const contactName = document.querySelector( '#contact-name' );
 const contactEmail = document.querySelector( '#contact-email' );
 const contactMessage = document.querySelector( '#contact-message' );
 const loader = document.querySelector( '.loader-pop-up' );
+const loaderIcon = document.querySelector( '.loader-pop-up .loader-icon i' );
+
+document.addEventListener( 'DOMContentLoaded', () => {
+    loader.style.display = 'none'
+})
 
 contactForm.addEventListener( 'submit', ( event ) => {
     event.preventDefault();
@@ -45,11 +50,11 @@ async function validateInput ( name, email, formData ) {
             if ( nameError.style.display === 'none' && emailError.style.display === 'none' ) {
                 resolve();
             } else {
-                reject('form validation error');
+                reject( 'form validation error' );
             }
         } );
-    } catch (error) {
-            throw new Error( error );
+    } catch ( error ) {
+        throw new Error( error );
     }
 
     sendEmail( formData );
@@ -76,4 +81,19 @@ async function sendEmail ( formData ) {
         alert( 'Something went wrong, please try again later' );
         throw new Error( error );
     }
+}
+
+// animate loader icon
+animateLoaderIcon();
+function animateLoaderIcon () {
+    // get display of loader from css
+    const dis = window.getComputedStyle( loader ).display;
+
+    if ( dis === 'flex' ) {
+        loaderIcon.classList.add( 'rotateAnimation' );
+    } else {
+        loaderIcon.classList.remove( 'rotateAnimation' );
+    }
+
+    requestAnimationFrame( animateLoaderIcon );
 }
