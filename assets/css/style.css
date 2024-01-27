@@ -428,3 +428,19 @@ main {
  color: red;
  margin: 0 0 10px 0;
 }
+
+.loader-pop-up{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, 20%);
+    background-color: #b0b0b0;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    flex-wrap: nowrap;
+    font-size: 25px;
+}
