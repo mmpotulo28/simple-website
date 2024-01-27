@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/reponsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/reponsive.css" />
   <title>Manelisi Mpotulo's Portfolio</title>
  </head>
  <body>
@@ -36,7 +36,7 @@
    <section class="about body-section">
     <div class="about-card">
      <div class="about-image">
-      <img src="./assets/images/tuiop.jpeg" alt="Profile Image" >
+      <img src="./assets/images/tuiop.jpeg" alt="Profile Image" />
      </div>
      <div class="about-info">
       <h1 class="about-heading section-heading">Manelisi Mpotulo</h1>
@@ -68,7 +68,7 @@
           src="./assets/images/skills/clipboard-image-3.png"
           alt="HTML"
           class="skill-image"
-         >
+         />
          <span class="skill-text">HTML</span>
         </li>
         <li>
@@ -76,7 +76,7 @@
           src="./assets/images/skills/clipboard-image-4.png"
           alt="CSS"
           class="skill-image"
-         >
+         />
          <span class="skill-text">CSS</span>
         </li>
         <li>
@@ -84,7 +84,7 @@
           src="./assets/images/skills/clipboard-image-5.png"
           alt="JavaScript"
           class="skill-image"
-         >
+         />
          <span class="skill-text">JavaScript</span>
         </li>
        </ul>
@@ -101,7 +101,7 @@
           src="./assets/images/skills/Node_logo_NodeJS.png"
           alt="Node.js"
           class="skill-image"
-         >
+         />
          <span class="skill-text">NODE JS</span>
         </li>
         <li>
@@ -109,7 +109,7 @@
           src="./assets/images/skills/clipboard-image-7.png"
           alt="MySQL"
           class="skill-image"
-         >
+         />
          <span class="skill-text">MySQL</span>
         </li>
        </ul>
@@ -126,7 +126,7 @@
           src="./assets/images/skills/git-icon-logo-png-transparent.png"
           alt="Git"
           class="skill-image"
-         >
+         />
          <span class="skill-text">Git</span>
         </li>
         <li>
@@ -134,7 +134,7 @@
           src="./assets/images/skills/clipboard-image-17.png"
           alt="GitHub"
           class="skill-image"
-         >
+         />
          <span class="skill-text">GitHub</span>
         </li>
         <li>
@@ -142,7 +142,7 @@
           src="./assets/images/skills/clipboard-image-16.png"
           alt="Azure Repo"
           class="skill-image"
-         >
+         />
          <span class="skill-text">Azure Repo</span>
         </li>
        </ul>
@@ -159,7 +159,7 @@
           src="./assets/images/skills/clipboard-image-9.png"
           alt="C"
           class="skill-image"
-         >
+         />
          <span class="skill-text">C</span>
         </li>
         <li>
@@ -167,7 +167,7 @@
           src="./assets/images/skills/clipboard-image-8.png"
           alt="Java"
           class="skill-image"
-         >
+         />
          <span class="skill-text">JAVA</span>
         </li>
        </ul>
@@ -187,7 +187,7 @@
        <img
         src="https://digitalisim.pages.dev/v.3.0/assets/img/iot.png"
         alt="project image"
-       >
+       />
       </div>
       <div class="project-info">
        <h2 class="project-info-heading">Digitalism</h2>
@@ -256,7 +256,7 @@
           id="contact-name"
           placeholder="Enter your name"
           required
-         >
+         />
          <p class="error-text" id="name-error"></p>
         </div>
         <div class="form-group">
@@ -266,7 +266,7 @@
           id="contact-email"
           placeholder="Enter your email"
           required
-         >
+         />
          <p class="error-text" id="email-error"></p>
         </div>
         <div class="form-group">
@@ -291,31 +291,25 @@
   <!-- footer -->
   <footer class="main-footer">
    <div class="footer-about">
-    <p>&copy; 2024: Manelis Mpotulo</p>
-   </div>
-
-   <div class="contact">
-    <span><i class="fas fa-phone"></i>063 590 2212</span>
-   </div>
-
-   <div class="socials">
-    <a target="_blank" href="https://Instagram.com/dj_mnesh"
-     ><i class="fab fa-instagram"></i
-    ></a>
-    <a target="_blank" href="https://github.com/mmpotulo28"
-     ><i class="fab fa-github"></i
-    ></a>
-    <a target="_blank" href="https://linkedin.com/in/mmpotulo"
-     ><i class="fab fa-linkedin"></i
-    ></a>
+    <p>&copy; 2024: Manelisi Mpotulo</p>
    </div>
   </footer>
 
-  <script src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
   <!-- import fontawesome icons -->
   <script
    src="https://kit.fontawesome.com/6d3b596002.js"
    crossorigin="anonymous"
   ></script>
+
+  <script
+   type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+   (function () {
+    emailjs.init('o24mx-l8WjlWOujcE');
+   })();
+  </script>
  </body>
 </html>

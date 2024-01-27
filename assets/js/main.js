@@ -1,3 +1,5 @@
+// import emailjs from 'emailjs-com';
+
 const contactForm = document.querySelector( '#contacts-form' );
 const contactName = document.querySelector( '#contact-name' );
 const contactEmail = document.querySelector( '#contact-email' );
@@ -13,6 +15,7 @@ contactForm.addEventListener( 'submit', ( event ) => {
     };
 
     validateInput( formData.name, formData.email );
+    sendEmail( formData );
 } );
 
 const emailError = document.querySelector( '#email-error' );
@@ -38,13 +41,25 @@ function validateInput ( name, email ) {
         emailError.style.display = 'none';
         emailError.textContent = '';
     }
+}
 
-    if ( nameError.style.display === 'none' && emailError.style.display === 'none' ) {
+async function sendEmail ( formData ) {
+    try {
+        await emailjs.send( 'service_5fplxzq', 'template_59ytvcn', {
+            from_name: formData.name,
+            to_name: 'Manelisi Mpotulo',
+            message: formData.message,
+            reply_to: formData.email,
+        }, 'o24mx-l8WjlWOujcE' );
+
         alert( 'Form submitted successfully, Thank you for your message' );
 
         contactName.value = '';
         contactEmail.value = '';
         contactMessage.value = '';
+        
+    } catch ( error ) {
+        alert( 'Something went wrong, please try again later' );
+        throw new Error( error );
     }
-
 }
